@@ -6,95 +6,104 @@
     android:orientation="vertical"
     android:background="#000000">
 
-    <!-- part1-top title_Lab 1 -->
+    <!-- 顶部标题栏：横屏仍保持顶部通栏 -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
         android:text="Lab 1"
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
-    <!-- the write area -->
+    <!-- 中间核心区域：横屏改为左右分栏，充分利用横向空间 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
-        android:background="#FFFFFF"
-        android:orientation="vertical">
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
-        <!-- Top half of color area：Responsive Layout 1 text -->
+        <!-- 左侧：原白色内容区域，占一半宽度 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <!-- 上半部分：Responsive Layout 1 文字 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Responsive Layout 1"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <!-- 下半部分：四个颜色方块 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FF0000"
+                    android:gravity="center"
+                    android:text="This"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#0000FF"
+                    android:gravity="center"
+                    android:text="is"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#7E57C2"
+                    android:gravity="center"
+                    android:text="my"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FFFF00"
+                    android:gravity="center"
+                    android:text="first"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 右侧：原黑色Android Application区域，占一半宽度 -->
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Responsive Layout 1"
-            android:textColor="#333333"
+            android:text="Android Application"
+            android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
-        <!-- the four color area -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FF0000"
-                android:gravity="center"
-                android:text="This"
-                android:textColor="#000000"
-                android:textSize="14sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#0000FF"
-                android:gravity="center"
-                android:text="is"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#7E57C2"
-                android:gravity="center"
-                android:text="my"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FFFF00"
-                android:gravity="center"
-                android:text="first"
-                android:textColor="#333333"
-                android:textSize="14sp" />
-        </LinearLayout>
     </LinearLayout>
 
-    <!-- black area：Android Application  -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:gravity="center"
-        android:text="Android Application"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp" />
-
-    <!-- button area -->
+    <!-- 底部按钮区：横屏仍保持底部通栏 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -127,7 +136,9 @@
             android:paddingTop="12dp"
             android:paddingBottom="12dp" />
     </LinearLayout>
+
 </LinearLayout>
+
 
 
 
