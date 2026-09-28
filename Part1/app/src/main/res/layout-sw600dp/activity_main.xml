@@ -6,18 +6,18 @@
     android:orientation="vertical"
     android:background="#000000">
 
-    <!-- part1-top title_Lab 1 -->
+    <!-- 顶部标题：平板增大上下内边距 -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp"
         android:text="Lab 1"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="22sp" />
 
-    <!-- the write area -->
+    <!-- 中间白色内容区域 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -25,7 +25,6 @@
         android:background="#FFFFFF"
         android:orientation="vertical">
 
-        <!-- Top half of color area：Responsive Layout 1 text -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -33,9 +32,8 @@
             android:gravity="center"
             android:text="Responsive Layout 1"
             android:textColor="#333333"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
 
-        <!-- the four color area -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -50,7 +48,7 @@
                 android:gravity="center"
                 android:text="This"
                 android:textColor="#000000"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="0dp"
@@ -60,7 +58,7 @@
                 android:gravity="center"
                 android:text="is"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="0dp"
@@ -70,7 +68,7 @@
                 android:gravity="center"
                 android:text="my"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="0dp"
@@ -80,11 +78,11 @@
                 android:gravity="center"
                 android:text="first"
                 android:textColor="#333333"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
 
-    <!-- black area：Android Application  -->
+    <!-- 黑色文本区域 -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -92,16 +90,16 @@
         android:gravity="center"
         android:text="Android Application"
         android:textColor="#FFFFFF"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
-    <!-- button area -->
+    <!-- 按钮区域：平板加大padding，按钮更舒适 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="16dp">
+        android:padding="24dp">
 
         <Button
             android:layout_width="0dp"
@@ -111,9 +109,9 @@
             android:textAllCaps="false"
             android:backgroundTint="#7E57C2"
             android:textColor="#FFFFFF"
-            android:layout_marginEnd="8dp"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp" />
+            android:layout_marginEnd="12dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"/>
 
         <Button
             android:layout_width="0dp"
@@ -123,11 +121,13 @@
             android:textAllCaps="false"
             android:backgroundTint="#7E57C2"
             android:textColor="#FFFFFF"
-            android:layout_marginStart="8dp"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp" />
+            android:layout_marginStart="12dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"/>
     </LinearLayout>
+
 </LinearLayout>
+
 
 
 
